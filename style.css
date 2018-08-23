@@ -1,3 +1,5 @@
+
+
 html {
 	background-image: url("img/Background.png");
 	-webkit-background-size: cover;
@@ -6,55 +8,79 @@ html {
 	background-size: cover;
 }
 
-input, select{
-	
-	border:2px solid red;
-	border-radius: 4px;
-	margin:8px 0;
-	outline: none;
-	padding: 8px;
-	box-sizing:border-box;
-	transition: .3s;
-}
-select{
-	width: 100%;
-
-
-
+.row{
+   display: flex;
+   justify-content: center;
 }
 
-.inputWithIcon input, .selectWithIcon select{
-	padding-left:40px;
-}
-
-
-.inputWithIcon, .selectWithIcon{
-	position: relative;
-}
-
-.inputWithIcon i, .selectWithIcon i{
-	position: absolute;
-	left: 0;
-	top: 8px;
-	padding: 9px 8px;
-	color:#aaa;
-	transition: .3s;
-	border-right: solid grey 1px;
-}
-
-.inputWithIcon  input:focus + i, .selectWithIcon select:focus + i{
-	color:#bb1010;
-}
-
-.left_column {
-	width: 40%;
-}
-
-.register_form{
-	max-width: 380px;
+.col{
+		margin:0 5%;
 	width: auto;
+	max-width: 360px;
+}
+
+form{
+
+background: white;
+box-sizing: border-box;
+-webkit-box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.3);
+box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.3);
+margin: 10px;
+padding: 10px;
+
+}
+
+label i{
 	float: left;
-	margin: 0 50%;
-	background: white;
-	padding: 10px;
+	padding: 5px;
+	border-right: grey solid 1px;
+}
+
+.user_input{
+	padding: 5px;
+	
+}
+.check{
+	margin: 10px 0;
+	padding: 5px;
+}
+
+.input_box{
+	
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 1px solid grey;
+	padding: 5px;
+	margin: 10px 0;
+	color: grey;
+}
+
+.data_input{
+	margin-left: 10px;
+
+}
+
+.top_logo{
+	
+	display: block;
+	margin: 10px auto;
+	width: 50%;
+	max-width: 430px;
+	opacity: 0.5;
+	
+}
+.btm_logo{
+	margin-top: 50px;
+	opacity: 0.5;
+}
+h2{
+	text-align: center;
+	color: white;
+	margin: 25px 0;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+	font-size: 2em;
+	font-weight: 300;
+
 }

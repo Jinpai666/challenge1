@@ -13,57 +13,243 @@
 <body>
 <div class="container">
 
-	<div class="top_logo">
-		<a><img src="img/TOP LOGO.png"></a>
-	</div>
+	<header>
+		<img class="top_logo" src="img/TOP LOGO.png">
+	</header>
 
-	<div class="left_column">
+	<div class="row">
+		
+	
+	<div class="col">
+
 <!-- REGISTER FORM -->
 
-		<h1 class="form_name">Register Form</h1>
+		<h2 class="form_name">Register Form</h2>
 
 		<div class="register_form">
 
 		<form >
 
-			<div class="inputWithIcon">
-				<input type="text" name="username" placeholder="Username" required>
-				<i class="fas fa-user fa-fw" aria-hidden="true"></i>
-			</div>
-			<div class="inputWithIcon">
-				<input type="password" name="password" placeholder="Password" required>
-				<i class="fas fa-user fa-fw" aria-hidden="true"></i>
-			</div>
-			<div class="inputWithIcon">
-				<input type="password" name="confirm_password" placeholder="Confirm Password" required>
-				<i class="fas fa-user fa-fw" aria-hidden="true"></i>
-			</div>
-			<div class="inputWithIcon">
-				<input type="text" name="email" placeholder="Email" required>
-				<i class="fas fa-user fa-fw" aria-hidden="true"></i>
-			</div>
-			<div class="inputWithIcon">
-				<input type="text" name="username" placeholder="Username" required>
-				<i class="fas fa-user fa-fw" aria-hidden="true"></i>
-			</div>
-			<div class="selectWithIcon">
-				<select name="location" placeholder="Your Location" required>
-				    <option value disabled selected>Your Location</option>
-				    <option value="gdansk">Gdańsk</option>
-				    <option value="wawa">Warszawa</option>
-				    <option value="poz">Poznań</option>
-				    <option value="wroc">Wrocław</option>
-				    <option value="lub">Lublin</option>
-				    <option value="zg">Zielona Góra</option>
-				</select>
-				<i class="fas fa-user fa-fw" aria-hidden="true"></i>
-			</div>
+			<div class="input_box">
+              <label class="icon">
+               <i class="fas fa-user fa-fw"></i>
+              </label>
+              <div class="user_input">
+                <input class="data_input" type="text" name="username" placeholder="Username" required>
+              </div>
+            </div>
+            <div class="input_box">
+              <label class="icon">
+                <i class="fas fa-lock fa-fw"></i>
+              </label>
+              <div class="user_input">
+                <input class="data_input" type="password" name="password" placeholder="Password" required>
+              </div>
+            </div>
+            <div class="input_box">
+              <label class="icon">
+                <i class="fas fa-lock fa-fw"></i>
+              </label>
+              <div class="user_input">
+              <input class="data_input" type="password" name="confirm" placeholder="Confirm password" required>
+            </div>
+            </div>
+            <div class="input_box">
+              <label class="icon">
+                <i class="fas fa-envelope fa-fw"></i>
+              </label>
+              <div class="user_input">
+                <input class="data_input" type="text" name="email" placeholder="Email" required>
+              </div>
+            </div>
+            <div class="input_box">
+              <label class="icon">
+                <i class="fas fa-map-marker-alt fa-fw"></i>
+              </label>
+              <div class="user_input">
+                <select class="data_input" name="location" placeholder="Your location" required>
+                  <option value="noLoc" disabled selected>Your location</option>
+                  <option value="Loc. 1">Kraków</option>
+                  <option value="Loc. 2">Gdańsk</option>
+                  <option value="Loc. 3">Warszawa</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="check">
+            	<input class="data_input" type="checkbox" id="terms">
+            	<span class="checkmark"></span>
+            	<label for="terms">I have read and accept the terms of use.</label>
+            </div>
+
+            <button class="data_input data_input--btn" type="button">Sign up!</button>
 
 		</form>
 
 		</div>
+
+<!-- EMAIL FORM -->
+
+		<h2 class="form_name">Send Email</h2>
+
+		<div class="register_form">
+		
+		<form>
+			<div class="input_box">
+				<label class="icon">
+					<i class="fas fa-user fa-fw"></i>
+				</label>
+				<div class="user_input">
+					<input class="data_input" type="text" name="username" placeholder="Username" required>
+				</div>
+	   		</div>
+
+	   		<div class="input_box">
+            	<label class="icon">
+           			<i class="fas fa-envelope fa-fw"></i>
+           		</label>
+          		<div class="user_input">
+            		<input class="data_input" type="text" name="email" placeholder="Email" required>
+            	</div>
+            </div>
+
+            <div class="input_box">
+            	<textarea class="data_input" placeholder="Type your message..."></textarea>
+            </div>
+
+            <div class="check">
+            	<input class="data_input" type="checkbox" id="email_copy">
+            	<span class="checkmark"></span>
+            	<label for="email_copy">Send a copy to my email.</label>
+            </div>
+
+           <button class="user_input user_input--btn" type="button">Send Email</button> 
+
+		</div>
+		</form>
 	</div>
-</div>
+
+	<div class="col">
+		
+<!-- SIGN IN FORM -->
+
+		<h2 class="form_name">Sign In Form</h2>
+
+		 <div class="register_form">
+
+		 <form>
+
+		 	<div class="input_box">
+              <label class="icon">
+               <i class="fas fa-user fa-fw"></i>
+              </label>
+              <div class="user_input">
+                <input class="data_input" type="text" name="username" placeholder="Username" required>
+              </div>
+            </div>
+            <div class="input_box">
+              <label class="icon">
+                <i class="fas fa-lock fa-fw"></i>
+              </label>
+              <div class="user_input">
+                <input class="data_input" type="password" name="password" placeholder="Password" required>
+              </div>
+            </div>
+            <div class="check">
+
+            	<input class="data_input" type="checkbox" id="remember_me">
+            	<span class="checkmark"></span>
+            	<label for="remember_me">Remember me</label>
+            	<button class="user_input user_input--btn" type="button">Sign in</button>
+
+            </div>
+
+
+
+		 </form>	
+
+<!-- RECOVER FORM -->
+
+		<h2 class="form_name">Recover Form </h2>
+
+		 <div class="register_form">
+
+		 <form>
+		 	
+		 	<div class="input_box">
+            	<label class="icon">
+           			<i class="fas fa-envelope fa-fw"></i>
+           		</label>
+          		<div class="user_input">
+            		<input class="data_input" type="text" name="email" placeholder="Email" required>
+            	</div>
+            </div>
+
+            <div class="input_box">
+              <label class="icon">
+                <i class="fas fa-phone fa-fw"></i>
+              </label>
+              <div class="user_input">
+                <input class="data_input" type="phone" name="phone" placeholder="Enter your phone number" required>
+              </div>
+            </div>
+
+            <div class="btn_box">
+            	<button class="user_input user_input--btn" type="button">Send</button>
+            	<button class="user_input user_input--btn light_green_btn" type="button">Done</button>
+
+            </div>
+
+		 </form>	
+
+		 </div>
+
+
+<!-- SUBSCRIBE FORM -->
+
+		<h2 class="form_name">Subscribe Form </h2>
+
+		 <div class="register_form">
+
+		 <form>
+		 	
+		 	<div class="input_box">
+            	<label class="icon">
+           			<i class="fas fa-envelope fa-fw"></i>
+           		</label>
+          		<div class="user_input">
+            		<input class="data_input" type="text" name="email" placeholder="Email" required>
+            	</div>
+            </div>
+
+            <div class="btn_box">
+	            <button class="user_input user_input--btn" type="button">Subscribe</button>
+	            <button class="user_input user_input--btn red_btn" type="button">No, Thanks</button>
+       		</div>
+            
+
+		 </form>	
+
+		 </div>
+
+		 <img class="btm_logo" src="img/BOTTOM LOGO.PNG">
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+
 
 </body>
 </html>
