@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 
 	<title>Challenge 1</title>
 
@@ -66,7 +67,7 @@
               <label class="icon">
                 <i class="fas fa-map-marker-alt fa-fw"></i>
               </label>
-              <div class="user_input">
+            <div class="user_input">
                 <select class="data_input" name="location" placeholder="Your location" required>
                   <option value="noLoc" disabled selected>Your location</option>
                   <option value="Loc. 1">Kraków</option>
@@ -76,13 +77,14 @@
               </div>
             </div>
 
-            <div class="check">
-            	<input class="data_input" type="checkbox" id="terms">
-            	<span class="checkmark"></span>
-            	<label for="terms">I have read and accept the terms of use.</label>
-            </div>
+	            <div class="check">
+	            	<input class="checkbox" type="checkbox" id="terms">
+	            	<label for="terms">I have read and accept the terms of use.</label>
+	            </div>
+	           
 
-            <button class="data_input data_input--btn" type="button">Sign up!</button>
+
+            	<button class="user_input user_input--btn single_btn" type="button">Sign up</button>
 
 		</form>
 
@@ -114,16 +116,15 @@
             </div>
 
             <div class="input_box">
-            	<textarea class="data_input" placeholder="Type your message..."></textarea>
+            	<textarea class="text_box data_input" placeholder="Type your message..."></textarea>
             </div>
 
             <div class="check">
-            	<input class="data_input" type="checkbox" id="email_copy">
-            	<span class="checkmark"></span>
+            	<input class="checkbox" type="checkbox" id="email_copy">
             	<label for="email_copy">Send a copy to my email.</label>
             </div>
 
-           <button class="user_input user_input--btn" type="button">Send Email</button> 
+           <button class="user_input single_btn user_input--btn" type="button">Send Email</button> 
 
 		</div>
 		</form>
@@ -155,12 +156,11 @@
                 <input class="data_input" type="password" name="password" placeholder="Password" required>
               </div>
             </div>
-            <div class="check">
+            <div class="check check_n_btn">
 
-            	<input class="data_input" type="checkbox" id="remember_me">
-            	<span class="checkmark"></span>
+            	<input class="checkbox" type="checkbox" id="remember_me">
             	<label for="remember_me">Remember me</label>
-            	<button class="user_input user_input--btn" type="button">Sign in</button>
+            	<button class="user_input shared_btn user_input--btn" type="button">Sign in</button>
 
             </div>
 
@@ -194,9 +194,10 @@
               </div>
             </div>
 
-            <div class="btn_box">
-            	<button class="user_input user_input--btn" type="button">Send</button>
-            	<button class="user_input user_input--btn light_green_btn" type="button">Done</button>
+            <div class="btn_container">
+
+            	<button class="user_input--btn double_btn" type="button">Send</button>
+            	<button class="user_input--btn light_green_btn double_btn" type="button">Done</button>
 
             </div>
 
@@ -222,9 +223,9 @@
             	</div>
             </div>
 
-            <div class="btn_box">
-	            <button class="user_input user_input--btn" type="button">Subscribe</button>
-	            <button class="user_input user_input--btn red_btn" type="button">No, Thanks</button>
+            <div class="btn_container">
+	            <button class="double_btn user_input--btn" type="button">Subscribe</button>
+	            <button class="double_btn user_input--btn red_btn" type="button">No, Thanks</button>
        		</div>
             
 
