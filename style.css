@@ -6,18 +6,26 @@ html {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	font-family: "Titillium Web";
 }
 
 .row{
-   display: flex;
-   justify-content: center;
+   
+  display: flex;
+  
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .col{
-		margin:0 5%;
+
+	margin:0 5%;
 	width: auto;
 	max-width: 360px;
+
 }
+
 
 form{
 
@@ -31,7 +39,7 @@ padding: 10px;
 
 }
 
-label i{
+.icon{
 	float: left;
 	padding: 5px;
 	border-right: grey solid 1px;
@@ -39,11 +47,7 @@ label i{
 
 .user_input{
 	padding: 5px;
-	
-}
-.check{
-	margin: 10px 0;
-	padding: 5px;
+		
 }
 
 .input_box{
@@ -56,23 +60,28 @@ label i{
 	margin: 10px 0;
 	color: grey;
 }
+input:focus, select:focus, textarea:focus {
+	outline-width: 0;
+
+}
 
 .data_input{
 	margin-left: 10px;
-
+	border:0;
+	width:85%;
 }
 
 .top_logo{
 	
 	display: block;
-	margin: 10px auto;
-	width: 50%;
+	margin: 2em auto;
 	max-width: 430px;
 	opacity: 0.5;
 	
 }
 .btm_logo{
-	margin-top: 50px;
+	max-width: 360px;
+	margin-top: 2em;
 	opacity: 0.5;
 }
 h2{
@@ -82,5 +91,75 @@ h2{
 	text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
 	font-size: 2em;
 	font-weight: 300;
+
+}
+
+.user_input--btn{
+-moz-box-shadow:inset 0px 1px 0px 0px #3dc21b;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #3dc21b;
+	box-shadow:inset 0px 1px 0px 0px #3dc21b;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #44c767), color-stop(1, #5cbf2a));
+	background:-moz-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+	background:-webkit-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+	background:-o-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+	background:-ms-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#44c767', endColorstr='#5cbf2a',GradientType=0);
+	background-color:#44c767;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	border-radius:1px;
+	border:1px solid #18ab29;
+	display: inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	letter-spacing: 2px;
+	text-decoration:none;
+	height: 3rem;
+
+
+
+
+}
+
+.single_btn{
+
+	width: 100%;	
+}
+
+.double_btn{
+
+	width: 40%;
+
+}
+
+.btn_container{
+	text-align: center;
+	justify-content: space-between;
+	
+
+}
+
+
+
+.space{
+	margin: 2rem;
+}
+
+
+.text_box {
+	width: 290px;
+	height: 200px;
+}
+
+.check {
+	padding: 5px;
+}
+
+.check_n_btn{
+display: inline-flex;
+justify-content: space-between;
+width: auto;
 
 }
